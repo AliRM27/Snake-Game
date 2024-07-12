@@ -27,7 +27,11 @@ let snake = [
 window.addEventListener("keydown", chanDirection);
 resetButton.addEventListener("click", resetGame);
 
-gamaStart();
+function Start(){
+    document.getElementById("gameContainer").style.display = "block"
+    document.getElementById("start").style.display = "none"
+    gamaStart();
+}
 
 function gamaStart(){
     running = true;
